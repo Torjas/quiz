@@ -1,0 +1,65 @@
+{
+  "1":{
+    "question": "Question 1",
+    "options": {
+      "1": {
+        "value": "Option 1",
+        "message": "Follow up message for option 1",
+        "next-level": ""
+      },
+      "2": {
+        "value": "Option 2",
+        "message": "Follow up message for option 2",
+        "next-level": ""
+      },
+      "3": {
+        "value": "Option 3",
+        "message": "Follow up message for option 3",
+        "next-level": ""
+      },
+      "answer": "1"
+    }
+  },
+  "2":{
+    "question": "Question 2",
+    "options": {
+      "1": {
+        "value": "Option 1",
+        "message": "Follow up message for option 1",
+        "next-level": ""
+      },
+      "2": {
+        "value": "Option 2",
+        "message": "Follow up message for option 2",
+        "next-level": ""
+      },
+      "3": {
+        "value": "Option 3",
+        "message": "Follow up message for option 3",
+        "next-level": ""
+      },
+      "answer": "2"
+    }
+  },
+  "3":{
+    "question": "Question 3",
+    "options": {
+      "1": {
+        "value": "Option 1",
+        "message": "Follow up message for option 1",
+        "next-level": ""
+      },
+      "2": {
+        "value": "Option 2",
+        "message": "Follow up message for option 2",
+        "next-level": ""
+      },
+      "3": {
+        "value": "Option 3",
+        "message": "Follow up message for option 3",
+        "next-level": ""
+      },
+      "answer": "3"
+    }
+  },
+}
