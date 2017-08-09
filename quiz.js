@@ -3,7 +3,9 @@ $(window).on('load', function(){
   // validate answers
   // display the follow up question and message
   $('input').on('click', function(){
-     $('div').text('You clicked on ' + $(this).closest('li').text());
-     $('div').slideDown();
+    var name = $(this).attr('name');
+    $('div.answer i').text('You clicked on ' + $(this).closest('li').text());
+    $(this).closest('ul').hide();
+    $('div.answer.' + name).fadeIn('slow');
   });
 });
