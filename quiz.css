@@ -76,4 +76,8 @@ div.answer p {
 
 input {
   border: 0;
+  cursor: pointer;
+}
+label{
+   cursor: pointer;
 }
