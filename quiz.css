@@ -133,6 +133,7 @@ div.answer p.reset {
   border: none;
   text-align: right;
   font-style: normal;
+  color: #fff;
 }
 div.answer p.reset a,
 div.answer p.reset a:link,
