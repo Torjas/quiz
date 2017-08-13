@@ -1,8 +1,30 @@
 $(window).on('load', function(){
+
   $('input').on('click', function(){
-    var value = $(this).attr('value');
-    $(this).closest('ul').hide();
-    console.log('div.answer p.' + value);
-    $('div.answer p.' + value).fadeIn('slow');
+    var id = $(this).attr('id');
+    var question = $(this).attr('name');
+
+    // Hide question
+    $(this).closest('ul.' + question).hide();
+
+    // Show answer
+    $('p.' + id).slideDown('slow');
+
+    // Show reset link
+    $('div.answer.' + question + ' p.reset').show();
+  });
+
+  $('p.reset a').on('click', function(){
+    var question = $(this).attr('class');
+    var visiblep = $('div.answer.' + question + ' p').filter(':visible');
+
+    // Hide answer
+    $(visiblep).hide();
+
+    // Hide reset link
+    $(this).closest('p.reset').hide();
+
+    // Show question again
+    $('ul.' + question).slideDown('slow');
   });
 });
