@@ -6,16 +6,53 @@
   <link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:900" rel="stylesheet">
   <link rel="stylesheet" href="quiz.css">
+<!-- Facebook sharing   -->
+  <meta property="og:url"           content="https://www.kleinerfuenf.de/de" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Spiel der radikale Höflichkeit" />
+  <meta property="og:description"   content="Spiel der radikale Höflichkeit" />
+  <meta property="og:image"         content="https://www.kleinerfuenf.de/sites/default/files/kleiner_fuenf_logo_100_.png" />
+<!-- Facebook sharing   -->
 </head>
 
 <body>
+<div id="fb-root"></div>
+<!-- Facebook sharing   -->
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+<!-- Facebook sharing   -->
   <nav>
     <p><a href="https://www.kleinerfuenf.de/de" target="_blank">kleinerfuenf.de</a></p>
+    <div class="share">
+      <div class="twitter-container">
+        <a class="twitter-share-button"
+          href="https://www.kleinerfuenf.de/de"
+          data-size="large"
+          data-text="Spiel der radikale Höflichkeit"
+          data-url="https://www.kleinerfuenf.de/de"
+          data-hashtags="k5,derRadikaleHoflichkeit"
+          data-via="kleinerfuenf"
+          data-related="kleinerfuenf">
+        Tweet
+        </a>
+      </div>
+      <div class="fb-share-button" data-href="https://www.kleinerfuenf.de/de"
+      data-layout="button" data-size="large" data-mobile-iframe="true">
+      <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">
+        Share
+      </a>
+    </div>
   </nav>
   <header>
-     <a href="https://www.kleinerfuenf.de/de" target="_blank" title="kleinerfuenf.de">&nbsp;</a>
+     <a href="https://www.kleinerfuenf.de/de" target="_blank" title="kleinerfuenf.de" class="logo">&nbsp;</a>
      <h1>Spiel der radikale Höflichkeit</h1>
-     <p class="intro">"Könnt ihr eure Leitfäden anschaulicher machen?" - vielen Dank für die zahlreichen interessierten Nachfragen. Ja, wir können. Klick dich durch das Spiel der radikalen Höflichkeit und teste dich selbst: Wie reagierst du auf rechtspopulistische Kommentare?</p>
+    </div>
+    <p class="intro">"Könnt ihr eure Leitfäden anschaulicher machen?" - vielen Dank für die zahlreichen interessierten Nachfragen. Ja, wir können. Klick dich durch das Spiel der radikalen Höflichkeit und teste dich selbst: Wie reagierst du auf rechtspopulistische Kommentare?</p>
   </header>
 
   <div class="questions">
@@ -228,6 +265,24 @@
     </p>
     <p class="right">Die Zeichnungen stammen von <a href="http://www.leowald.de" target="_blank">Leo Leowald.</a></p>
   </footer>
+   <script>
+    window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+
+      return t;
+    }(document, "script", "twitter-wjs"));
+  </script>
   <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
   <script src="quiz.js"></script>
   <script>
