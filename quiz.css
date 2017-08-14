@@ -1,3 +1,8 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: "Crete Round", serif;
   font-size: 1.025em;
@@ -89,8 +94,6 @@ h3 {
   padding: 8px 0 5px 0;
 }
 
-
-
 ul {
   list-style: none;
   margin-left: 0;
@@ -102,7 +105,7 @@ li {
 }
 
 div.question {
-  width: 98.6%;
+  width: 98.1%;
   display: table;
   padding: 15px;
   margin: 0;
@@ -166,11 +169,11 @@ div.answer p.reset a:visited {
 }
 
 input {
-  border: 0;
+/*   border: 0; */
   cursor: pointer;
 }
 input[type=radio] {
-  border-radius: 100%;
+/*   border-radius: 100%; */
   height: 15px;
   width: 15px;
 }
@@ -181,117 +184,90 @@ label{
 
 @media only screen and (max-width: 1024px) {
   nav p {
-    float: left;
-    width: 100%;
+    width: 60%;
   }
   nav div.share {
-    float: left;
-    width: 100%;
-    padding-left: 15px;
+    width: 35%;
+    padding: 0;
   }
   nav div.share div {
-    float: left;
-    width: 35%;
+    width: 30%;
   }
 
   header a.logo:link,
   header a.logo:hover,
   header a.logo:visited {
-    background: url(https://www.kleinerfuenf.de/sites/default/files/kleiner_fuenf_logo_100_.png) left 15px no-repeat;
-    width: 100%;
-    height: 115px;
-    display: inline-block;
-    text-decoration: none;
-    color: #111;
-    float: left;
+    width: 70%;
   }
 
   header h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 3.0em;
-    font-family: 'Source Code Pro', monospace;
-    width: 100%;
+    width: 70%;
+    font-size: 1.5em;
   }
   header p.intro {
-    float: left;
-    margin: 0 0 30px 5px;
+    margin: 0;
     padding: 0;
-    width: 100%;
+    width: 70%;
   }
-  footer, nav { width: 100%; }
-  footer { height: 65px }
+
+  footer { height: 100px }
   footer p.left {
-    float: left;
-    width: 40%;
-    padding-bottom: 15px;
+    float: none;
+    padding-bottom: 5px;
   }
 
   footer p.right {
-    float: left;
-    width: 45%;
-    padding-bottom: 10px;
+    float: none;
+    padding-bottom: 5px;
   }
 
+  div.questions {
+    width: 100%;
+  }
   div.question {
     width: 100%;
-    display: table;
-    padding: 15px;
+    padding: 0;
     margin: 0;
   }
-
   div.question p {
     margin: 0;
-    padding: 5px 10px 10px 0;
+    padding: 0;
   }
-
   div.questions img {
-    border: 8px solid #fff;
+    border: 5px solid #fff;
   }
-
   h3 {
     display: block;
-    width: 100%;
+    width: 90%;
   }
-
   .annette img,
   .tristan img {
     float: none;
     display: block;
-    margin: 20px;
+    margin: 0;
   }
-
   .lydia img,
   .heiner img {
     float: none;
     display: block;
-    margin: 10px;
+    margin: 0;
   }
-
   div.answer {
-    width: 100%;
+    width: 90%;
     margin: 0;
   }
   div.answer p {
-    padding: 10px;
+    padding: 0;
   }
 }
 
 @media only screen and (max-width: 481px) {
+  header a.logo:link,
+  header a.logo:hover,
+  header a.logo:visited {
+    width: 80%;
+  }
   div.questions img {
     display: none;
-  }
-
-  footer { height: 100px; }
-  footer p.left {
-    float: none;
-    width: 100%;
-    padding-bottom: 15px;
-  }
-
-  footer p.right {
-    float: none;
-    width: 100%;
-    padding-bottom: 10px;
   }
 }
