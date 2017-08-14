@@ -182,7 +182,7 @@ label{
    cursor: pointer;
 }
 
-@media only screen and (max-width: 1024px) {
+/*@media only screen and (max-width: 1024px) {
   nav p {
     width: 60%;
   }
@@ -192,6 +192,11 @@ label{
   }
   nav div.share div {
     width: 30%;
+  }
+
+  header {
+    margin: 0;
+    width: 80%;
   }
 
   header a.logo:link,
@@ -253,7 +258,7 @@ label{
     margin: 0;
   }
   div.answer {
-    width: 90%;
+    width: 80%;
     margin: 0;
   }
   div.answer p {
@@ -270,4 +275,4 @@ label{
   div.questions img {
     display: none;
   }
-}
+}*/
