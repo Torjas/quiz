@@ -181,73 +181,7 @@ label{
    cursor: pointer;
 }
 
-/*@media only screen and (max-width: 1024px) {
-  nav p {
-    width: 40%;
-  }
-  nav div.share {
-    float: left;
-    width: 50%;
-    padding: 10px 0 10px 0;
-  }
-  nav div.share div {
-    float: left;
-    width: 45%;
-  }
-  header {
-    margin: 10px 0 10px 10px;
-    width: 90%;
-  }
-
-  header a.logo:link,
-  header a.logo:hover,
-  header a.logo:visited {
-    width: 90%;
-  }
-
-  header h1 {
-    width: 80%;
-    font-size: 2.0em;
-  }
-  header p.intro {
-    margin: 0;
-    padding: 10px 0 10px 0;
-    width: 100%;
-  }
-
-  footer { height: 100px }
-  footer p.left {
-    float: none;
-    padding-bottom: 5px;
-    width: 90%;
-  }
-
-  footer p.right {
-    float: none;
-    padding-bottom: 5px;
-    width: 90%;
-  }
-
-  div.questions {
-    font-size: 1.0em;
-  }
-
-  div.questions img {
-    width: 160px;
-    height: 225px;
-    border: 8px solid #fff;
-  }
-
-  div.questions {
-    width: 96.1%;
-  }
-
-  div.question {
-    width: 100.3%;
-  }
-}*/
-
-@media only screen and (max-width: 481px) {
+@media only screen and (min-width: 320px) {
   nav p {
     width: 25%;
   }
@@ -305,7 +239,7 @@ label{
   }
 
   div.questions {
-    width: 93.1%;
+    width: 98.1%;
   }
 
   div.question {
@@ -313,7 +247,7 @@ label{
   }
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 1024px) {
   nav p {
     width: 30%;
   }
@@ -371,7 +305,7 @@ label{
   }
 
   div.questions {
-    width: 93.1%;
+    width: 94.6%;
   }
 
   div.question {
