@@ -12,6 +12,9 @@ $(window).on('load', function(){
 
     // Show reset link
     $('div.answer.' + question + ' p.reset').show();
+
+    // Create GA event
+    ga('send', 'event', 'Answer', question, id);
   });
 
   $('p.reset a').on('click', function(){
@@ -26,5 +29,8 @@ $(window).on('load', function(){
 
     // Show question again
     $('ul.' + question).slideDown('slow');
+
+     // Create GA event
+    ga('send', 'event', 'Reset', question, $(visiblep[0]).attr("class"));
   });
 });
