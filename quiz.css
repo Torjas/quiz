@@ -87,6 +87,15 @@ div.question p {
   padding: 15px 0 15px 0;
 }
 
+div.question ul {
+ margin-left: 20px;
+}
+
+div.question li {
+ list-style-type: circle;
+ cursor: pointer;
+}
+
 .annette { background: #A7D6DE;  }
 .lydia { background: #ED7372; }
 .tristan { background: #AA7C5B; }

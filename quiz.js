@@ -1,8 +1,8 @@
 $(window).on('load', function(){
 
-  $('input').on('click', function(){
+  $('div.question li').on('click', function(){
     var id = $(this).attr('id');
-    var question = $(this).attr('name');
+    var question = $(this).closest('ul').attr('class');
 
     // Hide question
     $(this).closest('ul.' + question).hide();
@@ -18,7 +18,6 @@ $(window).on('load', function(){
   });
 
   $('p.reset a.reset').on('click', function(){
-    console.log($(this).text());
     var question = $(this).attr('class').split(' ')[0];
     var visiblep = $('div.answer.' + question + ' p').filter(':visible');
 
