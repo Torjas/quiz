@@ -17,8 +17,9 @@ $(window).on('load', function(){
     ga('send', 'event', 'Answer', question, id);
   });
 
-  $('p.reset a').on('click', function(){
-    var question = $(this).attr('class');
+  $('p.reset a.reset').on('click', function(){
+    console.log($(this).text());
+    var question = $(this).attr('class').split(' ')[0];
     var visiblep = $('div.answer.' + question + ' p').filter(':visible');
 
     // Hide answer
