@@ -49,7 +49,7 @@ li {
 
 .nav-k5 p,
 .footer-k5 p {
-  padding: 10px 0;
+  padding: 14px 0;
 }
 
 .header-k5 {
@@ -85,21 +85,6 @@ div.question {
 
 div.question p {
   padding: 15px 0 15px 0;
-}
-
-div.question li {
-  width: 100%;
-  display: table;
-}
-div.question input {
-  cursor: pointer;
-  float: left;
-  margin: 6px;
-}
-div.question label{
-   cursor: pointer;
-   float: left;
-   width: 95%;
 }
 
 .annette { background: #A7D6DE;  }
