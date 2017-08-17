@@ -4,7 +4,7 @@ html {
 }
 body {
   font-family: "Crete Round", serif;
-  font-size: 1.05em;
+  font-size: 1.5em;
   line-height: 1.4;
   color: #111;
   background-color: #fff;
@@ -19,11 +19,14 @@ h1 {
 h3 {
   font-size: 2.0em;
   font-family: 'Source Code Pro', monospace;
+  margin:0 0 20px 0;
+  padding: 0;
 }
 
 p {
   font-family: "Crete Round", serif;
 }
+p.intro { padding-top: 10px; }
 ul {
   list-style: none;
   margin: 0;
@@ -44,7 +47,7 @@ li {
   height: 45px;
   background-color: #282828;
   color: #fff;
-  font-size: 0.8em;
+  font-size: 0.95em;
 }
 
 .nav-k5 p,
@@ -63,28 +66,61 @@ li {
 .footer-k5 a:link,
 .footer-k5 a:visited {
   color: #fff;
+  font-family: "Crete Round", serif;
 }
 .header-k5 a.logo:link,
 .header-k5 a.logo:hover,
 .header-k5 a.logo:visited {
   background: url(https://www.kleinerfuenf.de/sites/default/files/kleiner_fuenf_logo_100_.png) left 15px no-repeat;
-  width: 100%;
+  width: 84px;
   height: 115px;
   display: inline-block;
   text-decoration: none;
   color: #111;
 }
 
-.container-fluid img {
+.container img {
   border: 10px solid #fff;
 }
 
+img.left-12 {
+  transform:          rotate(-12deg);
+  -ms-transform:      rotate(-12deg);
+  -moz-transform:     rotate(-12deg);
+  -webkit-transform:  rotate(-12deg);
+  -o-transform:       rotate(-12deg);
+}
+
+img.left-10 {
+  transform:          rotate(-10deg);
+  -ms-transform:      rotate(-10deg);
+  -moz-transform:     rotate(-10deg);
+  -webkit-transform:  rotate(-10deg);
+  -o-transform:       rotate(-10deg);
+}
+
+img.right-8 {
+  transform:          rotate(8deg);
+  -ms-transform:      rotate(8deg);
+  -moz-transform:     rotate(8deg);
+  -webkit-transform:  rotate(8deg);
+  -o-transform:       rotate(8deg);
+}
+
+img.right-12 {
+  transform:          rotate(12deg);
+  -ms-transform:      rotate(12deg);
+  -moz-transform:     rotate(12deg);
+  -webkit-transform:  rotate(12deg);
+  -o-transform:       rotate(12deg);
+}
+
 div.question {
-  padding: 30px 0px 30px 0;
+  padding: 30px 30px 30px 15px;
 }
 
 div.question p {
-  padding: 15px 0 15px 0;
+  padding: 0 10px 10px 0;
 }
 
 div.question ul {
@@ -94,6 +130,11 @@ div.question ul {
 div.question li {
  list-style-type: circle;
  cursor: pointer;
+ padding: 5px 5px 5px 0
+}
+
+div.question li:hover {
+ color: #fff
 }
 
 .annette { background: #A7D6DE;  }
@@ -107,19 +148,20 @@ div.answer {
 
 div.answer p {
   display: none;
-  background-image: none;
-  border: 3px solid #fff;
   font-style: italic;
   padding: 15px;
+  background: rgba(255, 255, 255, 0.50);
 }
 div.answer p.reset {
   display: none;
-  background-image: none;
   border: none;
   text-align: right;
   font-style: normal;
   color: #fff;
+  padding: 0;
+  background: none;
 }
+
 div.answer p.reset a,
 div.answer p.reset a:link,
 div.answer p.reset a:hover,

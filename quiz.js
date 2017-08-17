@@ -8,7 +8,7 @@ $(window).on('load', function(){
     $(this).closest('ul.' + question).hide();
 
     // Show answer
-    $('p.' + id).slideDown('slow');
+    $('p.' + id).fadeIn('slow');
 
     // Show reset link
     $('div.answer.' + question + ' p.reset').show();
@@ -28,7 +28,7 @@ $(window).on('load', function(){
     $(this).closest('p.reset').hide();
 
     // Show question again
-    $('ul.' + question).slideDown('slow');
+    $('ul.' + question).fadeIn('slow');
 
      // Create GA event
     ga('send', 'event', 'Reset', question, $(visiblep[0]).attr("class"));
