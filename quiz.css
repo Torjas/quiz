@@ -47,12 +47,15 @@ li {
   height: 45px;
   background-color: #282828;
   color: #fff;
-  font-size: 0.95em;
+  font-size: 0.9em;
 }
 
-.nav-k5 p,
+.nav-k5 p {
+  padding: 12px 0 0 0;
+}
+
 .footer-k5 p {
-  padding: 14px 0;
+  padding: 12px 0 10px 0;
 }
 
 .header-k5 {
