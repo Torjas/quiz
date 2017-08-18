@@ -4,7 +4,7 @@ html {
 }
 body {
   font-family: "Crete Round", serif;
-  font-size: 1.5em;
+  font-size: 1.75em;
   line-height: 1.4;
   color: #111;
   background-color: #fff;
@@ -84,6 +84,7 @@ li {
 
 .container img {
   border: 6px solid #fff;
+  margin-top: 20%;
 }
 
 img.left-12 {
