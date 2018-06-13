@@ -1,373 +1,648 @@
 <html>
-  <head>
-    <title>K5: Spiel der radikalen Höflichkeit</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#159d98">
-    <meta name="theme-color" content="#159d98">
-    <link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:900" rel="stylesheet">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="quiz.css">
-    <meta charset="utf-8"/>
+<head>
+  <title>K5: Spiel der radikalen Höflichkeit</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#159d98">
+  <meta name="theme-color" content="#159d98">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:900" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="quiz.css">
+  <meta charset="utf-8" />
+  <!-- Facebook sharing   -->
+  <meta property="og:url" content="https://spiel.kleinerfuenf.de/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Spiel der radikalen Höflichkeit" />
+  <meta property="og:description" content='Könnt ihr eure Leitfäden anschaulicher machen?" - vielen Dank für die zahlreichen interessierten Nachfragen. Ja, wir können. Klick dich durch das Spiel der radikalen Höflichkeit und teste dich selbst: Wie reagierst du auf rechtspopulistische Kommentare?'
+  />
+  <meta property="og:image" content="https://spiel.kleinerfuenf.de/assets/annette.jpg" />
+  <meta property="fb:app_id" content="388330791583031" />
+  <!-- Facebook sharing   -->
+  <!--Cookie Banner -->
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"
+  />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js" async></script>
+  <script async>
+    window.addEventListener("load", function () {
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#159d98"
+          },
+          "button": {
+            "background": "#ffffff"
+          }
+        },
+        "position": "bottom-right",
+        "content": {
+          "message": "Diese Webseite verwendet Cookies, um bestimmte Funktionen zu ermöglichen und das Angebot zu verbessern. Indem Sie hier fortfahren, stimmen Sie der Nutzung von Cookies zu. ",
+          "dismiss": "Einverstanden",
+          "link": "Mehr Informationen",
+          "href": "https://www.kleinerfuenf.de/de/datenschutz"
+        }
+      })
+    }
+    );
+  </script>
+  <!--Cookie Banner -->
+</head>
+
+<body>
+  <div class="container">
+    <div id="fb-root"></div>
     <!-- Facebook sharing   -->
-      <meta property="og:url"           content="https://spiel.kleinerfuenf.de/" />
-      <meta property="og:type"          content="website" />
-      <meta property="og:title"         content="Spiel der radikalen Höflichkeit" />
-      <meta property="og:description"   content='Könnt ihr eure Leitfäden anschaulicher machen?" - vielen Dank für die zahlreichen interessierten Nachfragen. Ja, wir können. Klick dich durch das Spiel der radikalen Höflichkeit und teste dich selbst: Wie reagierst du auf rechtspopulistische Kommentare?' />
-      <meta property="og:image"         content="https://spiel.kleinerfuenf.de/assets/annette.jpg" />
-      <meta property="fb:app_id"        content="388330791583031" />
+    <script>
+      (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!-- Facebook sharing   -->
-    <!--Cookie Banner -->
-      <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-      <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js" async></script>
-      <script async>
-        window.addEventListener("load", function(){
-          window.cookieconsent.initialise({
-            "palette": {
-              "popup": {
-                "background": "#159d98"
-              },
-              "button": {
-                "background": "#ffffff"
-              }
-            },
-            "position": "bottom-right",
-            "content": {
-              "message": "Diese Webseite verwendet Cookies, um bestimmte Funktionen zu ermöglichen und das Angebot zu verbessern. Indem Sie hier fortfahren, stimmen Sie der Nutzung von Cookies zu. ",
-              "dismiss": "Einverstanden",
-              "link": "Mehr Informationen",
-              "href": "https://www.kleinerfuenf.de/de/datenschutz"
-            }
-          })}
-        );
-      </script>
-    <!--Cookie Banner -->
-  </head>
-  <body>
-    <div class="container">
-      <div id="fb-root"></div>
-      <!-- Facebook sharing   -->
-        <script>
-          (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));
-        </script>
-      <!-- Facebook sharing   -->
-      <div class="row nav-k5">
-        <div class="col-xs-4 col-md-8 col-lg-10">
-          <p><a href="https://www.kleinerfuenf.de/de" target="_blank">kleinerfuenf.de</a></p>
-        </div>
-        <div class="col-xs-8 col-md-4 col-lg-2 share">
-          <div class="twitter-container pull-right">
-            <a class="twitter-share-button"
-              href="https://spiel.kleinerfuenf.de/"
-              data-size="large"
-              data-text="Spiel der radikalen Höflichkeit"
-              data-url="https://spiel.kleinerfuenf.de/"
-              data-hashtags="k5,derRadikalenHoflichkeit"
-              data-via="kleinerfuenf"
-              data-related="kleinerfuenf">
+    <div class="row nav-k5">
+      <div class="col-xs-4 col-md-8 col-lg-10">
+        <p>
+          <a href="https://www.kleinerfuenf.de/de" target="_blank">kleinerfuenf.de</a>
+        </p>
+      </div>
+      <div class="col-xs-8 col-md-4 col-lg-2 share">
+        <div class="twitter-container pull-right">
+          <a class="twitter-share-button" href="https://spiel.kleinerfuenf.de/" data-size="large" data-text="Spiel der radikalen Höflichkeit"
+            data-url="https://spiel.kleinerfuenf.de/" data-hashtags="k5,derRadikalenHoflichkeit" data-via="kleinerfuenf" data-related="kleinerfuenf">
             Tweet
-            </a>
-          </div>
-          <div class="fb-share-button pull-right" data-href="https://spiel.kleinerfuenf.de/"
-          data-layout="button" data-size="large" data-mobile-iframe="true">
-            <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fspiel.kleinerfuenf.de%2F&amp;src=sdkpreparse">
-              Share
-            </a>
-          </div>
+          </a>
         </div>
-      </div>
-      <div class="row header-k5">
-        <div class="col-xs-3 col-md-2 col-lg-1">
-          <a href="https://www.kleinerfuenf.de/de" target="_blank" title="kleinerfuenf.de" class="logo">&nbsp;</a>
-        </div>
-        <div class="col-xs-9 col-md-10 col-lg-11">
-          <h1>Spiel der radikalen Höflichkeit</h1>
-          <p class="intro">"Könnt ihr eure Leitfäden anschaulicher machen?" - vielen Dank für die zahlreichen interessierten Nachfragen. Ja, wir können. Klick dich durch das Spiel der radikalen Höflichkeit und teste dich selbst: Wie reagierst du auf rechtspopulistische Kommentare?</p>
-        </div>
-      </div>
-
-      <div class="annette question row">
-        <h3>Annette aus der Buchhaltung</h3>
-        <div class="row">
-          <div class="hidden-xs col-sm-4 col-md-3 col-lg-2">
-            <img src="assets/annettee.jpg" class="left-12" />
-          </div>
-          <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
-
-            <p>
-              Während der Mittagspause in der Büroküche wurde über den letzten "Tatort” gesprochen. Thema des Films waren Geflüchtete und Proteste gegen die Errichtung von Erstaufnahmestellen. Bei der Unterhaltung fiel dir Annette aus der Buchhaltung auf. Sie ist eine langjährige Kollegin von dir und ihr versteht euch gut. Annette sagte: "Die können ja nicht alle kommen" und "Also bei uns sollte auch so ein Containerding hin. Da kann man ja seine Kinder nicht mehr rauslassen. Ist doch klar, dass ich da Angst hab. Ich trau mich das kaum zu sagen, sonst werde ich gleich als Rassistin abgestempelt."
-            </p>
-
-            <ul class="1">
-              <li id="q1option1">Du ignorierst den&nbsp;Kommentar. Jeder wie er will. Jede wie sie will.</li>
-              <li id="q1option2">Du unterbrichst Annette und machst für alle laut und deutlich klar, dass du ihre Aussagen vollkommen daneben findest.</li>
-              <li id="q1option3">Du fragst nach der Pause Monika aus der Personalabteilung, was sie dazu denkt.</li>
-              <li id="q1option4">Du wartest die Pause ab und fragst später, ob Anette kurz 10 Minuten Zeit für einen Kaffee und ein wichtiges Gespräch mit dir hätte.</li>
-            </ul>
-
-            <div class="answer 1">
-              <p class="q1option1">
-                Schade, denn es kann sehr wertvoll und hilfreich sein, diverse Meinungen anzuhören. Du kannst durch deine Meinung Annette
-                wertvolle Anregungen geben. Nur so können wir Verständnis füreinander entwickeln und einen Dialog führen. Klar, es
-                muss nicht immer alles kommentiert werden (und auf manche Aussagen wollen wir auch nicht eingehen). Aber wenn es
-                um persönliche Ängste und Sorgen geht, möchten wir doch alle ernst genommen werden, oder? Und das kannst du mit einer
-                Reaktion am besten deutlich machen.
-              </p>
-              <p class="q1option2">
-                Puh, wie fühlt sich Annette wohl dabei? Andere vor Publikum anzufahren, selbst wenn es im tiefsten Sinne gut gemeint ist,
-                führt meistens zu einer unangenehmen Atmosphäre für alle und nicht zu einem respektvollem Dialog und Lösungen. Warum
-                hast du so reagiert?
-              </p>
-              <p class="q1option3">
-                Du teilst deine Bedenken bzw. holst dir die Meinung anderer zu dieser Situation ein. Das kann hilfreich sein, dich stärken
-                oder reflektieren lassen. Vielleicht gibt dir Monika einen Tipp, wie du Annette ansprechen kannst. Es kann jedoch
-                auch sein, dass Monika Annette berichtet, dass du über sie gesprochen hast, anstatt mit ihr zu sprechen.
-              </p>
-              <p class="q1option4">
-                Es ist wahrscheinlich, dass Annette einen Kaffee mit dir trinkt und dir aufmerksam zuhört, wenn du ankündigst, dass dir das
-                Thema am Herzen liegt. Kein Publikum hört euch zu oder beobachtet euch. In Ruhe, höflich und ernsthaft kannst du
-                das Gespräch mit einer Frage eröffnen z.B.: "Woher kommt deine Angst vor einer Unterkunft für Geflüchtete?" oder
-                einer Ich-Botschaft z.B.: "Ich habe mich vorhin nicht gut gefühlt, als ich hörte, wie du über Geflüchtete sprachst.
-                Glaubst du nicht auch, dass wir sie nicht alle über einen Kamm scheren können?". <em>Um dein Argument zu stärken, kann es hilfreich sein, von einem positiven persönlichen Erlebnis mit Geflüchteten zu berichten. Vielleicht kommt sie so von selbst drauf, dass ihre Vorurteile nicht stimmen.</em>        Wichtig ist nicht, dass du Annette von deiner Position überzeugst, sondern dass du Aufmerksamkeit, Verständnis und
-                dennoch deine Meinung zeigst. Danach fühlst du dich bestimmt erleichtert.
-              </p>
-              <p class="reset">
-                <a href="javascript:;" class="1 reset">Anders reagieren?</a> /
-                <a href="https://www.kleinerfuenf.de/de/leitfaeden" target="_blank">Zu den Leitfäden</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="heiner question row">
-        <h3>Heiner, dein Onkel</h3>
-        <div class="row">
-          <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
-            <p>
-              Nach einem Familienfest gehen alle gemeinsam spazieren. Der Gang führt euch an Parteiplakatwerbung vorbei. Dein Onkel Heiner dröhnt: "Schulz, Merkel, Schmerkel, Mulz – das sind alles dieselben! Keiner von denen hat auch nur das geringste Interesse am Wohle der Bürger! Die Altparteien haben ausgedient. Die werden sich noch wundern." Wie reagierst du?
-            </p>
-
-            <ul class="2">
-              <li id="q2option1">Du machst ihn lächerlich, indem du sein Gegröle nachahmst. Darin bist du gut, die Familie lacht.</li>
-              <li id="q2option2">Du sammelst deine Gedanken und bittest Heiner fünf Minuten später darum, dass ihr euch etwas zurückfallen lasst, um euch in Ruhe und ohne Familienpublikum zu unterhalten.</li>
-              <li id="q2option3">Du schweigst und wirst nachdenklich, das familiäre Abendessen sagst du später ab.</li>
-              <li id="q2option4">Du sagst: "Sag‘ mal, hackt‘s?" und zählst laut alle inhaltlichen Unterschiede zwischen Angela Merkel und Martin Schulz auf, die du kennst.</li>
-            </ul>
-
-            <div class="answer 2">
-              <p class="q2option1">
-                Vielleicht hat es dir geholfen, deine Wut oder deinem Ärger Luft zu verschaffen. Aber weder kennt Heiner deine Gedanken zu
-                dem Thema, noch weißt du nun, warum er so etwas sagt. Humor ist toll, aber sehr schwierig, wenn es um sensible Meinungen
-                oder Gefühle geht und wir einander besser verstehen wollen. </p>
-              <p class="q2option2">
-                Heiner ist bestimmt kein einfacher Gesprächspartner. Aber ihr kennt euch und du beweist ihm nun dein aufrichtiges Interesse
-                an ihm und seinen Aussagen. Außerdem kannst Du ihm zeigen, dass du selbstständig denkst und handelst. Frage ihn z.B.:
-                "Seit wann misstraust du allen etablierten Parteien so sehr? Gab es dafür ein Schlüsselereignis?" Oder "Glaubst du,
-                dass andere Akteure die Probleme unserer Zeit gerechter lösen? Wie könnte das gehen?". Wenn er gesprochen und berichtet
-                hat, bittest du ihn anschließend, dir zuzuhören. Nun kannst du ruhig und entschlossen sagen, warum du auch Zweifel
-                an etablierten Parteien hast, aber in Hohn und Hetze keine Lösung siehst. Am besten dankst du Heiner am Ende für
-                das Gespräch und bittest ihn sich deine Meinung durch den Kopf gehen zu lassen.
-              </p> 
-              <p class="q2option3">
-                Es wurmt dich bestimmt noch länger, dass du nichts erwidert hast. Diese Situationen kommen viel zu häufig vor. Vielleicht
-                erzählst du sogar Freunden von deinem Onkel und seinen Parolen. Gib dir das nächste Mal einen Ruck und suche das
-                Gespräch – so schwierig das auch sein mag. Es ist nie zu spät, auch fünf Wochen später kannst du Heiner anrufen und
-                sagen, was dich bedrückt.
-              </p>
-              <p class="q2option4">
-                Du wurdest provoziert. Punkt geht an Heiner. Je aufgeregter und nervöser du deinen Vortrag hältst desto weniger wahrscheinlich
-                ist es, dass die anderen Anwesenden Lust auf einen Dialog mit dir zu dem Thema haben. Im schlimmsten Fall legt Heiner
-                nun noch einen drauf und behauptet: "Als ich in deinem Alter war, dachte ich auch noch, dass die was für uns tun,
-                haha, werde erstmal so erfahren wie ich".
-              </p>
-
-              <p class="reset">
-                <a href="javascript:;" class="2 reset">Anders reagieren?</a> /
-                <a href="https://www.kleinerfuenf.de/de/leitfaeden" target="_blank">Zu den Leitfäden</a>
-              </p>
-            </div>
-          </div>
-          <div class="hidden-xs col-sm-4 col-md-3 col-lg-2">
-            <img src="assets/heinerr.jpg" class="right-8"/>
-          </div>
-        </div>
-      </div>
-
-      <div class="tristan question row">
-        <h3>Tristan, dein Mitbewohner</h3>
-        <div class="row">
-          <div class="hidden-xs col-sm-4 col-md-3 col-lg-2">
-            <img src="assets/tristann.jpg" class="left-10" />
-          </div>
-          <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
-            <p>
-              Du kommst von der Arbeit nach Hause in die WG. In der Küche wird laut gelacht. Wunderbar, so liebst du es – es ist Leben im Haus! Dein Mitbewohner und seine Freunde sitzen schon gut angetrunken am Küchentisch und machen sich über eine neue Mitstudentin lustig. Du fragst warum sie komisch sei. Tristan schenkt dir Wein ein und sagt: "Ach, das würde dir nicht gefallen." "Wieso?" fragst du und er fährt fort: "Weil die auch so ‘ne Genderwahn-Tante ist. Die wollte heute im Seminar einen Vortrag über Unterschiede von Gehältern zwischen Männern und Frauen halten. Nur weil sie das selbst erlebt hat vor dem Studium. Als ob das heute noch ein Thema wäre – dieser falsch verstandene Feminismus ist zum Kotzen. Studentinnen finden wir ja nice, aber krakelende Protestfrauen nicht." Die anderen stimmen lachend zu. Wie reagierst du?
-            </p>
-
-            <ul class="3">
-              <li id="q3option1">Du schüttelst verständnislos den Kopf, hebst dein Glas und sagst: "Ich hab das starke Gefühl, dass ihr es seid, die Feminismus falsch verstanden haben. Auf dass ich euch morgen nüchtern treffe und ihn euch erklären kann." Ihr stoßt an, danach gehst du auf dein Zimmer.</li>
-              <li id="q3option2">Du boxt ihm spielerisch in den Arm, lächelst und sagt: "Du bist so doof!"</li>
-              <li id="q3option3">Du versteinerst, denkst dir "Ach, der ist besoffen immer so” und verlässt wortlos die Küche.</li>
-              <li id="q3option4">Du sagst: "Ernsthaft?", bekommst aber Gegenwind. Darauf kommst du in Rage und sagst: "Ich hab‘ so keinen Bock mehr mit dir zusammen zu wohnen. Kannst morgen deine Sachen packen. Ich bin HauptmieterIn".</li>
-            </ul>
-
-            <div class="answer 3">
-              <p class="q3option1">
-                Du hast deutlich gemacht, dass du anderer Meinung bist und dennoch deeskalierend eingewirkt. Das Gespräch am nächsten Tag
-                ist unvermeidlich. Bitte Tristan sich Zeit zu nehmen, geht vielleicht spazieren, so dass ihr nicht wieder in der
-                Küche sitzt. Du musst ihm nicht unbedingt am Beispiel der Mitstudentin erläutern, was dir nicht passt. Du kannst
-                auch allgemeiner erklären, was Sexismus ist. Dabei kannst du eigene Beispiele aus deinen Erfahrungen nutzen. Frage
-                ihn, ob er es ok fände, wenn du z.B. offenkundig rassistisch wärst, denn Rassismus und Sexismus sind oft eng miteinander
-                verbunden.
-              </p>   
-               <p class="q3option2">
-                Was willst du damit sagen? Dass es ok ist, was Tristan da von sich gegeben hat? Dass es lustig ist, wie er redet? Leider
-                wirkt deine Reaktion wie eine Zustimmung und noch dazu wirkst du sehr unsicher. Die Runde wird morgen vergessen haben,
-                dass du dabei warst.
-              </p>
-              <p class="q3option3">
-                Irgendwie verständlich, dass du keine Lust auf die Diskussion hast und auch keine Lust weiter dort zu sitzen. Am besten sprichst
-                du Tristan direkt Morgen auf seinen sexistischen Auftritt an. Seine Freunde werden dann aber nicht erfahren, was
-                du denkst und fühlst.
-              </p>
-              <p class="q3option4">
-                Tristan scheint gerade nicht in der Lage zu sein, seinen Mietvertrag zu besprechen. Ebenso wenig hat er offensichtlich Lust,
-                über Geschlechtergerechtigkeit zu sprechen. Mit ihm weiter zusammen zu wohnen ist daher sicher keine schöne Aussicht.
-                Aber gerade schürst du den Konflikt anstatt zu thematisieren, worum es eigentlich geht, nämlich den Sexismus, der
-                in seinen Aussagen steckt. Ein Ausraster oder Rauswurf wird dich aufwühlen. Schlaf eine Nacht darüber und erkläre
-                Tristan ernsthaftund in Ruhe, weshalb du so genervt bist.
-              </p>
-
-              <p class="reset">
-                <a href="javascript:;" class="3 reset">Anders reagieren?</a> /
-                <a href="https://www.kleinerfuenf.de/de/leitfaeden" target="_blank">Zu den Leitfäden</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="lydia question row">
-        <h3>Lydia, die Freundin deines Bruders</h3>
-        <div class="row">
-          <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
-            <p>
-              Deine Schwester feiert ihre Verlobungsfeier. Du bist eingeladen und kommst etwas zu spät, die Feier läuft, mehre Gäste sind da. Am Buffet triffst du Lydia, die Freundin deines Bruders, ihr kennt euch schon seit Jahren, seid euch nicht wirklich ähnlich, aber könnt immer zusammen lachen. Sie ist bekannt dafür viel zu reden, so auch jetzt, als sie eine Eilmeldung auf ihr Handy bekommt: "Ach, wieder Krach bei der EZB! Also ich muss sagen, diese ganze Eurolüge geht mir auf den Keks. Ich habe neulich so eine Doku gesehen, da ist mir klar geworden, dass der Euro uns gar nicht geholfen hat, wusstest du das? Der soll uns einfach noch mehr an Brüssel ketten. Auch dieses ganze Bachelor/Master Ding an Unis – pure Bevormundung. Meine Güte, die Welt steht halt Kopf. Gestern noch ein christlicher, friedlicher Nationalstaat und schwupps heute schon islamisiert im Namen der Toleranz. Naja, du musst diese Hackbällchen probieren, köstlich!" Wie reagierst du?
-            </p>
-
-            <ul class="4">
-              <li id="q4option1">Du starrst Lydia fassungslos an, nimmst dir ein Hackbällchen und sagst verwirrt: "Ja, stimmt."</li>
-              <li id="q4option2">Dir ist es unangenehm jetzt über all das Politische zu sprechen und fragst lieber: "Sag mal, wusstest du, dass Julia schwanger ist?"</li>
-              <li id="q4option3">Du weißt sie auf das Themenhopping hin und sagst bestimmt: "Würdest du dich mit mir raus auf die Terrasse setzen? Ich bin ehrlich gesagt überrascht über das, was du sagst, und würde da gerne drüber sprechen."</li>
-              <li id="q4option4">Du nimmst ihr den Teller aus der Hand und wirst etwas laut:" Lydia? Sag‘ mal, geht’s noch? Bist du jetzt auch schon eine von diesen Hassrednern oder wie?"</li>
-            </ul>
-
-            <div class="answer 4">
-              <p class="q4option1">
-                Stimmst du ihr zu oder möchtest du einfach, dass es aufhört? Manchmal, wenn wir verwirrt sind, sagen wir Dinge, die wir nicht
-                meinen, wie zum Beispiel: "Ja, stimmt". Das ist nicht hilfreich. Selbst, wenn du an einem anderen Tag mit Lydia sprichst,
-                wird sie sich fragen, weshalb du ihr dann zugestimmt hast und dich vielleicht als unsicher wahrnehmen. Wenn du dich
-                überfahren von Worten fühlst, sag lieber: "Da muss ich erstmal drüber nachdenken". Das ist nicht unfreundlich, drückt
-                aber aus, dass du Zeit benötigst.
-              </p>
-              <p class="q4option2">
-                Entweder weiß Lydia die Neuigkeiten von Julia schon lange oder sie wird aufgeregt sein, sie zu erfahren. Wie auch immer,
-                die Botschaft geht leider am Thema vorbei. Du signalisierst damit, dass dir egal ist, worüber Lydia gerade gesprochen
-                hat. Du musst natürlich nicht gleich am Buffet alle Themen aufarbeiten. Aber es wäre gut zu zeigen, dass sie dir
-                nicht gleichgültig sind. Du könntest Lydia auch fragen, ob sie nächste Woche Lust auf einen Kaffee hat. So beendest
-                du das Thema, nimmst dir aber fest vor, es nochmal aufzugreifen.
-              </p>
-              <p class="q4option3">
-                Ob die Situation Zeit und Raum für ein ordentliches Gespräch hergibt, das musst du entscheiden. Aber mache ruhig deutlich,
-                dass du es gefährlich findest, Vorwürfe, wie "Eurolüge", "Bevormundung" und "Islamisierung im Namen der Toleranz"
-                rauszuschmettern. Wenn ihr beide die Ruhe habt, frag sie doch mal, wo sie diese Worte her hat. Du kannst sie auch
-                fragen, ob sie persönlich nicht auch schon mal gute Erfahrungen mit Menschen mit muslimischem Glauben gemacht habt.
-                Außerdem kannst du von deinen persönlichen Erfahrungen berichten: "Mein Friseur ist Moslem und er hat mir mal erzählt,
-                wie sehr es ihn verletzt, wenn andere über "Islamisierung” sprechen”. So bleibt das Gespräch erstmal bei einem persönlichen
-                und konkreten Thema und driftet nicht so schnell ab. Wenn die Ruhe nicht da ist, könntest du folgendes vorschlagen:
-                "Hey, mich treiben diese Themen wie Europa und Werte auch sehr um. Cool, dass uns das beiden so geht. Wollen wir
-                morgen telefonieren? Ich fände es wichtig, dass wir uns dazu austauschen."
-              </p>
-              <p class="q4option4">
-                Sie wird sich vor den Kopf gestoßen oder sogar angegriffen fühlen. Das ist keine gute Ausgangslage für ein gegenseitiges
-                Zuhören. Wenn es dir auf der Seele brennt, dann weise sie lieber freundlich darauf hin, dass du ihren Redeschwall
-                hinterfragst: "So kenne ich dich gar nicht. Du bist aufgebracht von so unterschiedlichen politischen Themenfeldern.
-                Hast du dich länger und tiefer mit ihnen beschäftigt?". Lydia hat gerade ganz klassische populistische Gesprächsmuster
-                gefahren und ist sich darüber wahrscheinlich nicht bewusst. Angriff ist daher nicht die beste Verteidigung. Vielleicht
-                reagiert Lydia ja aber auch besonders gut auf Humor. Dann könntest Du etwas sagen wie: "He, was ist los mit dir?
-                Stell dir mal vor ich würde über dein Kleid, dann über die Wirtschaftskrise und dann über die Verschmutzung der Weltmeere
-                in einem Atemzug sprechen." Wenn sie darüber lacht, hast du einen Zugang zu einem Gespräch über Themenhopping.
-              </p>
-
-              <p class="reset">
-                <a href="javascript:;" class="4 reset">Anders reagieren?</a> /
-                <a href="https://www.kleinerfuenf.de/de/leitfaeden" target="_blank">Zu den Leitfäden</a>
-              </p>
-            </div>
-          </div>
-          <div class="hidden-xs col-sm-4 col-md-3 col-lg-2">
-            <img src="assets/lydiaa.jpg" class="right-12"/>
-          </div>
-        </div>
-      </div>
-      <div class="row footer-k5">
-        <div class="col-xs-6 col-sm-2 col-lg-1">
-          <p><a href="https://www.kleinerfuenf.de/de/impressum" target="_blank">Impressum</a></p>
-        </div>
-        <div class="col-xs-6 col-sm-2 col-lg-1">
-          <p><a href="https://www.kleinerfuenf.de/de/datenschutz" target="_blank">Datenschutz</a></p>
-        </div>
-        <div class="hidden-xs col-sm-8 col-lg-10">
-          <p class="pull-right">Die Zeichnungen stammen von <a href="http://www.leowald.de" target="_blank">Leo Leowald.</a></p>
-        </div>
-      </div>
-      <div class="row footer-k5 visible-xs">
-        <div class="col-xs-12 col-sm-10">
-          <p>Die Zeichnungen stammen von <a href="http://www.leowald.de" target="_blank">Leo Leowald.</a></p>
+        <div class="fb-share-button pull-right" data-href="https://spiel.kleinerfuenf.de/" data-layout="button" data-size="large"
+          data-mobile-iframe="true">
+          <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fspiel.kleinerfuenf.de%2F&amp;src=sdkpreparse">
+            Share
+          </a>
         </div>
       </div>
     </div>
-    <script>
-      window.twttr = (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0],
-          t = window.twttr || {};
-        if (d.getElementById(id)) return t;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
+    <div class="row header-k5">
+      <div class="col-xs-3 col-md-2 col-lg-1">
+        <a href="https://www.kleinerfuenf.de/de" target="_blank" title="kleinerfuenf.de" class="logo">&nbsp;</a>
+      </div>
+      <div class="col-xs-9 col-md-10 col-lg-11">
+        <h1>Spiel der radikalen Höflichkeit</h1>
+        <p class="intro"> “Könnt ihr eure Gesprächsleitfäden anschaulicher machen? Und woher weiß ich, wann ich wie reagieren soll?” - vielen
+          Dank für die zahlreichen interessierten Nachfragen, das machen wir gerne: Ein Patentrezept, das immer geht, gibt
+          es zwar nicht! Stattdessen findet ihr hier zahlreiche Anregungen für die richtige Reaktion, je nach Gegenüber und
+          Kontext.
+          <br>
+          <br>Klick dich durch das Spiel der radikalen Höflichkeit und teste dich selbst: Wie reagierst du auf rechtspopulistische
+          Kommentare?
+        </p>
+      </div>
+    </div>
 
-        t._e = [];
-        t.ready = function(f) {
-          t._e.push(f);
-        };
+    <div class="annette question row">
+      <h3>Annette aus der Buchhaltung</h3>
+      <div class="row">
+        <div class="hidden-xs col-sm-4 col-md-3 col-lg-2">
+          <img src="assets/annettee.jpg" class="left-12" />
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
 
-        return t;
-      }(document, "script", "twitter-wjs"));
-    </script>
-    <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
-    <script src="quiz.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          <p>
+            Während der Mittagspause in der Büroküche wurde über den letzten "Tatort” gesprochen. Thema des Films waren Geflüchtete und
+            Proteste gegen die Errichtung von Erstaufnahmestellen. Bei der Unterhaltung fiel dir Annette aus der Buchhaltung
+            auf. Sie ist eine langjährige Kollegin von dir und ihr versteht euch gut. Annette sagte: "Die können ja nicht
+            alle kommen" und "Also bei uns sollte auch so ein Containerding hin. Da kann man ja seine Kinder nicht mehr rauslassen.
+            Ist doch klar, dass ich da Angst hab. Ich trau mich das kaum zu sagen, sonst werde ich gleich als Rassistin abgestempelt."
+          </p>
 
-      ga('create', 'UA-91433839-3', 'auto');
-      ga('send', 'pageview');
+          <ul class="1">
+            <li id="q1option1">Du ignorierst den Kommentar, deine Mittagspause ist dir zu schade für solche Gespräche und wahrscheinlich bringt
+              es sowieso nichts.</li>
+            <li id="q1option2">Du unterbrichst Annette und machst für alle laut und deutlich klar, dass du ihre Aussagen vollkommen daneben
+              findest.
+            </li>
+            <li id="q1option3">Du grenzt dich höflich von Annettes Aussage ab, indem du eine deutliche, aber freundlich formulierte Ich-Botschaft
+              entgegnest.
+            </li>
+            <li id="q1option4">Du wartest die Pause ab und fragst später, ob Annette kurz zehn Minuten Zeit für einen Kaffee und ein wichtiges
+              Gespräch mit dir hätte.</li>
+          </ul>
 
-    </script>
-  </body>
+          <div class="answer 1">
+            <p class="q1option1">
+              Schade, denn wenn es um persönliche Ängste und Sorgen geht, möchten wir doch alle ernst genommen werden, oder? Und durch
+              deine Meinung kannst du Annette vielleicht sogar wertvolle Anregungen geben, schließlich versteht ihr euch
+              sonst sehr gut. Klar, es muss nicht alles kommentiert werden - auf manche Aussagen wollen wir auch nicht eingehen.
+              Aber nur mit einer Reaktion kannst du überhaupt deutlich machen, dass du ihre Aussage problematisch findest
+              und sicherstellen, dass sie nicht einfach so im Raum stehen bleibt.
+            </p>
+            <p class="q1option2">
+              Puh, wie fühlt sich Annette wohl dabei? Du möchtest das Gesagte nicht unkommentiert stehen lassen, das ist verständlich.
+              Aber andere vor Publikum so anzufahren… selbst wenn es gut gemeint sein sollte, führt das meistens zu einer
+              unangenehmen Atmosphäre und macht jeden Dialog zunichte. Fällt dir ein anderer Weg ein, das Thema in der Gruppe
+              anzusprechen?
+
+            </p>
+            <p class="q1option3">
+              Wenn dir Annettes Aussagen unangenehm sind, dann kannst du das auch direkt äußern. So beziehst du Stellung und musst deine
+              Reaktion nicht vertagen. Indem Du auf deine Position hinweist, bringst Du Annette außerdem nicht gleich in
+              eine unangenehme Situation. Entgegne zum Beispiel: "Annette, ich fühle mich bei deiner Äußerung unwohl und
+              habe ehrlich gesagt ganz andere Erfahrungen gemacht als du." Dich in der Gruppe abzugrenzen, ist vor allem
+              dann gut, wenn du das Gefühl hast, ihre Aussagen werden womöglich von einigen Kolleg*innen geteilt oder als
+              unproblematisch empfunden. Sofern möglich kannst du der Debatte auch noch einen anderen inhaltlichen Rahmen
+              geben, indem du zum Beispiel auf die Schutzbedürftigkeit von geflüchteten Menschen hinweist, statt auf ihr
+              angebliches Gefahrenpotential: "Das sind immerhin Menschen, die vor Krieg oder Verfolgung geflohen sind. Ich
+              finde es sehr wichtig, dass wir ihnen Schutz bieten und helfen."
+
+            </p>
+            <p class="q1option4">
+              Annette trinkt bestimmt einen Kaffee mit dir und hört dir zu, wenn du sagst, dass dir das Thema am Herzen liegt. Ein direktes
+              Gespräch ist sinnvoll, wenn du Annette nicht vor der gesamten Belegschaft konfrontieren willst - denn das könnte
+              sie verunsichern oder bloßstellen. In Ruhe und zu zweit, höflich und ernsthaft kannst du das Gespräch mit einer
+              Frage eröffnen: “Woher kommt deine Angst vor einer Unterkunft für Geflüchtete?“ oder mit einer Ich-Botschaft:
+              “Ich habe mich vorhin nicht gut gefühlt, als ich hörte, wie du über Geflüchtete gesprochen und sie alle über
+              einen Kamm geschoren hast“. Es kann auch hilfreich sein, von einem positiven Erlebnis mit Geflüchteten zu berichten.
+              Wichtig ist nicht, dass du Annette von deiner Position überzeugst, sondern dass du Aufmerksamkeit und Verständnis
+              für ihre Sorgen zeigst und dennoch deine Meinung klar machst.
+            </p>
+            <p class="reset">
+              <a href="javascript:;" class="1 reset">Anders reagieren?</a> /
+              <a href="https://www.kleinerfuenf.de/de/leitfaeden" target="_blank">Zu den Leitfäden</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="heiner question row">
+      <h3>Heiner, dein Onkel</h3>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+          <p>
+            Nach einem Familienfest gehen alle gemeinsam spazieren. Der Gang führt euch an Parteiplakatwerbung vorbei. Dein Onkel Heiner
+            dröhnt: “Scholz, Merkel, Schmerkel, Molz – das sind alles dieselben! Keiner von denen hat auch nur das geringste
+            Interesse am Wohle der Bürger! Die Altparteien haben ausgedient. Die werden sich noch wundern.“ Wie reagierst
+            du?
+
+          </p>
+
+          <ul class="2">
+            <li id="q2option1">Du machst ihn lächerlich, indem du sein Gegröle nachahmst. Darin bist du gut, die Familie lacht.</li>
+            <li id="q2option2">Du schweigst und wirst nachdenklich, das familiäre Abendessen sagst du später ab.</li>
+            <li id="q2option3">Du sagst: “Sag‘ mal, hackt‘s?“ und zählst laut alle inhaltlichen Unterschiede zwischen Angela Merkel und Olaf
+              Scholz auf, die du kennst.
+            </li>
+            <li id="q2option4">Du widersprichst Heiner deutlich, aber sachlich und ruhig - und bietest ihm an, nachher nochmal in Ruhe zu sprechen.</li>
+            <li id="q2option5">Du sammelst deine Gedanken und bittest Heiner fünf Minuten später darum, dass ihr euch etwas zurückfallen lasst,
+              um euch in Ruhe und ohne Familienpublikum zu unterhalten.</li>
+          </ul>
+
+          <div class="answer 2">
+            <p class="q2option1">
+              Vielleicht hat es dir geholfen, deine Wut oder deinem Ärger Luft zu verschaffen. Aber alles in allem hast du dich nicht positioniert
+              - weder kennt Heiner deine Gedanken zu dem Thema, noch weißt du nun, warum er so etwas sagt. Humor ist toll,
+              aber manchmal auch heikel, wenn es um sensible Meinungen oder Gefühle geht und wir einander besser verstehen
+              wollen.
+            </p>
+            <p class="q2option2">
+              Es wurmt dich bestimmt noch länger, dass du nichts erwidert hast. Diese Situationen kommen viel zu häufig vor. Vielleicht
+              erzählst du sogar Freunden von deinem Onkel und seinen Parolen. Das hilft, um gemeinsam Lösungen für künftige
+              Situationen zu suchen, die ähnlich sind. Trotzdem: Gib dir das nächste Mal einen Ruck und suche das Gespräch
+              – so schwierig das auch sein mag. Es ist nie zu spät, auch noch einige Zeit später kannst du Heiner anrufen
+              und sagen, was dich bedrückt.
+
+            </p>
+            <p class="q2option3">
+              Du wurdest provoziert. Punkt geht an Heiner. Je aufgeregter und nervöser du deinen Vortrag hälst desto weniger wahrscheinlich
+              ist es, dass die anderen Anwesenden Lust auf einen Dialog mit dir zu dem Thema haben. Im schlimmsten Fall legt
+              Heiner nun noch einen drauf und behauptet: „Als ich in deinem Alter war, dachte ich auch noch, dass die was
+              für uns tun, haha, werde erstmal so erfahren wie ich“.
+
+            </p>
+            <p class="q2option4">
+              Du fühlst dich bei Heiners Kommentaren unwohl und möchtest sie vor den anderen nicht so stehen lassen, weil du befürchtest,
+              dass deine Nichte das eventuell ähnlich sieht. Dann drücke deinen Widerspruch in einem knappen, ehrlichen Einwand
+              aus: Versuche es zum Beispiel mit “Ich finde nicht okay, was du sagst. Ich selbst habe Freunde, die sich in
+              Parteien engagieren. Die möchten sich sehr wohl um die Bedürfnisse von anderen kümmern”. Mache aber auch klar,
+              dass du bereit bist, mit ihm zu diskutieren - allerdings erst später, wenn ihr alleine seid und ungestört sprechen
+              könnt: Denn gerade im Familienumfeld führt so eine direkte Diskussion schnell zu heißen Gemütern. Niemand ist
+              dann mehr in der Lage, sich gegenseitig aufmerksam zuzuhören und angemessen zu reagieren. Sollte Heiner ein
+              späteres Gespräch ablehnen, entlarvt er damit jedoch seine Provokation.
+
+            </p>
+            <p class="q2option5">
+              Wenn du keine Sorge hast, dass andere Familienmitglieder Heiner womöglich insgeheim zustimmen, dann kannst du seinen Kommentar
+              auch erstmal so stehen lassen. Doch auch später zu zweit ist Heiner bestimmt kein einfacher Gesprächspartner.
+              Aber ihr kennt euch und du beweist nun dein aufrichtiges Interesse an ihm und seinen Aussagen. Frage ihn z.B.:
+              “Seit wann misstraust du allen etablierten Parteien so sehr? Gab es dafür ein Schlüsselereignis?“ Oder „Glaubst
+              du, dass andere Akteure die Probleme unserer Zeit gerechter lösen? Wie könnte das gehen?“. Wenn er gesprochen
+              und berichtet hat, bittest du ihn, nun dir zuzuhören. Dann kannst du ruhig und entschlossen sagen, warum du
+              vielleicht auch Zweifel an etablierten Parteien hast, aber in Hohn und Hetze keine Lösung siehst. Wenn du allerdings
+              auch während des Gesprächs merkst, dass Heiner nicht an einem ernsthaften Austausch interessiert ist, kannst
+              du das Gespräch auch guten Gewissens beenden.
+            </p>
+            <p class="reset">
+              <a href="javascript:;" class="2 reset">Anders reagieren?</a> /
+              <a href="https://www.kleinerfuenf.de/de/leitfaeden" target="_blank">Zu den Leitfäden</a>
+            </p>
+          </div>
+        </div>
+        <div class="hidden-xs col-sm-4 col-md-3 col-lg-2">
+          <img src="assets/heinerr.jpg" class="right-8" />
+        </div>
+      </div>
+    </div>
+
+    <div class="tristan question row">
+      <h3>Tristan, dein Mitbewohner</h3>
+      <div class="row">
+        <div class="hidden-xs col-sm-4 col-md-3 col-lg-2">
+          <img src="assets/tristann.jpg" class="left-10" />
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+          <p>
+            Du kommst von der Arbeit nach Hause in die WG. In der Küche wird laut gelacht. Wunderbar, so liebst du es – es ist Leben
+            im Haus! Dein Mitbewohner und seine Freunde sitzen schon gut angetrunken am Küchentisch und machen sich über
+            eine neue Mitstudentin lustig. Du fragst warum sie komisch sei. Tristan schenkt dir Wein ein und sagt: “Ach,
+            das würde dir nicht gefallen, die ist auch so ‘ne Gender-Tante ist. Sie wollte heute im Seminar einen Vortrag
+            über Unterschiede von Gehältern zwischen Männern und Frauen halten. Nur weil sie das selbst erlebt hat vor dem
+            Studium. Als ob das heute noch ein Thema wäre – dieser falsch verstandene Feminismus ist zum Kotzen. Studentinnen
+            finden wir ja nice, aber hysterische Mannsweiber nicht.“ Die anderen stimmen lachend zu.
+          </p>
+
+          <ul class="3">
+            <li id="q3option1">Du boxt ihm spielerisch in den Arm, lächelst und sagst: „Du bist so doof!“
+            </li>
+            <li id="q3option2">Du versteinerst, denkst dir “Ach, der ist besoffen immer so” und verlässt wortlos die Küche.</li>
+            <li id="q3option3">Du sagst: “Ernsthaft?“, bekommst aber Gegenwind. Darauf kommst du in Rage und sagst: “Ich hab‘ so keinen Bock
+              mehr mit dir zusammen zu wohnen. Kannst morgen deine Sachen packen. Ich bin HauptmieterIn“.</li>
+            <li id="q3option4">Du schüttelst verständnislos den Kopf, hebst dein Glas und sagst: “Ich hab das starke Gefühl, dass ihr es seid,
+              die Feminismus falsch verstanden haben. Auf dass ich euch morgen nüchtern treffe und wir darüber reden können,
+              was Feminismus wirklich bedeutet.“ Ihr stoßt an, danach gehst du auf dein Zimmer.</li>
+            <li id="q3option5">Du sagst: “Stimmt, was für eine Genderwahn-Mannsweib-Tante! Will die doch tatsächlich genauso viel bezahlt bekommen
+              wie ihre männlichen Kollegen… Frech!”. </li>
+          </ul>
+
+          <div class="answer 3">
+            <p class="q3option1">
+              Was willst du damit sagen? Dass es okay ist, was Tristan da von sich gegeben hat? Dass es lustig ist, wie er redet? Leider
+              kommt deine Reaktion wie eine Zustimmung daher, noch dazu wirkst du sehr unsicher. Außerdem fühlst du dich
+              vermutlich am nächsten Tag nicht mehr sehr wohl mit deiner Reaktion. Immerhin hast du dir schon oft gesagt,
+              dass du in genau solchen Situationen nicht mehr einfach nur die Klappe halten willst.
+
+            </p>
+            <p class="q3option2">
+              Es ist verständlich, dass du keine Lust auf die Diskussion hast und lieber in dein Zimmer gehst. Vielleicht sprichst du Tristan
+              lieber morgen auf seinen sexistischen Auftritt an. Seine Freunde werden dann aber nicht erfahren, was du denkst
+              und fühlst. Dabei ist genau das in solchen Situationen sehr wichtig: Zeigen, dass diese Ansichten nicht von
+              allen geteilt werden und auch verletzend sein können
+            </p>
+            <p class="q3option3">
+              Tristan scheint gerade nicht in der Lage zu sein, seinen Mietvertrag zu besprechen. Ebenso wenig hat er offensichtlich Lust,
+              über Geschlechtergerechtigkeit zu sprechen. Mit ihm weiter zusammen zu wohnen ist daher nicht unbedingt eine
+              schöne Aussicht. Doch auch wenn es wichtig und mutig von dir war, dich in dieser Gruppe klar gegen die Aussagen
+              zu positionieren, schürst du gerade den Konflikt, anstatt zu thematisieren, worum es eigentlich geht: Den Sexismus,
+              der in Tristans Aussagen steckt. Ein Ausraster oder Rauswurf wird dich aufwühlen.
+
+            </p>
+            <p class="q3option4">
+              Du hast deutlich gemacht, dass du anderer Meinung bist und dennoch deeskalierend eingewirkt. Das Gespräch am nächsten Tag
+              ist unvermeidlich. Bitte Tristan, sich Zeit zu nehmen, geht vielleicht spazieren, so dass ihr nicht wieder
+              in der Küche sitzt. Du musst ihm nicht unbedingt am Beispiel der Mitstudentin erläutern, was dir nicht passt.
+              Du kannst auch allgemeiner erklären, was Sexismus ist. Dabei kannst du eigene Beispiele aus deinen Erfahrungen
+              nutzen. Frage ihn, ob er es ok fände, wenn du z.B. offenkundig rassistisch wärst, denn Rassismus und Sexismus
+              sind oft eng miteinander verbunden.
+
+            </p>
+            <p class="q3option5">
+              Ironie funktioniert oft gut, so eine Reaktion kann jedoch auch manchmal nach hinten losgehen. Als Einstieg in diese Runde
+              ist es aber vielleicht gar nicht so schlecht. Mit dieser Reaktion wirst du auf jeden Fall nicht gleich als
+              nervig und besserwisserisch abgetan. Stattdessen hast du deine Meinung klar geäußert und auch deutlich gemacht,
+              dass Tristans Position absurd ist, nicht die seiner Kommilitonin. Trotzdem: Ein Gespräch ersetzt dieser Kommentar
+              nicht. Er kann aber ein Einstieg sein, wenn du dich dafür gewappnet fühlst: Du kannst jetzt selbst auf lockere
+              Art eine persönliche Erfahrung schildern und Tristan und seine Freunde so für das Thema sensibilisieren. Sie
+              werden es wahrscheinlich nicht wagen, sich in deiner Abwesenheit so abschätzig über dich zu äußern, wie sie
+              es leider über ihre Kommilitonin getan haben. Versuche vielleicht, immer wieder ein wenig Humor einfließen
+              zu lassen, damit die anderen dabei bleiben. So kannst du einen selbstbewussten und sympathischen Auftritt machen,
+              der sich auch positiv auf deine inhaltliche Botschaft auswirkt.
+
+            </p>
+            <p class="reset">
+              <a href="javascript:;" class="3 reset">Anders reagieren?</a> /
+              <a href="https://www.kleinerfuenf.de/de/leitfaeden" target="_blank">Zu den Leitfäden</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lydia question row">
+      <h3>Lydia, die Freundin deines Bruders</h3>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+          <p>
+            Ein großes Familienfest. Am Buffet triffst du Lydia, die Freundin deines Bruders, ihr kennt euch schon seit Jahren, seid
+            euch nicht wirklich ähnlich, aber könnt immer zusammen lachen. Sie ist bekannt dafür, viel zu reden, so auch
+            jetzt, als sie eine Eilmeldung auf ihr Handy bekommt: “Ach, wieder Krach bei der EZB! Also ich muss sagen, diese
+            ganze Eurolüge geht mir auf den Keks. Ich habe neulich so eine Doku gesehen, da ist mir klar geworden, dass der
+            Euro uns gar nicht geholfen hat, wusstest du das? Der soll uns einfach noch mehr von Brüssel abhängig machen.
+            Auch dieses ganze Bachelor/Master Ding an Unis – pure Bevormundung. Meine Güte, die Welt steht halt Kopf. Gestern
+            noch ein christlicher, friedlicher Nationalstaat und schwupps heute schon islamisiert und gegendert im Namen
+            der Toleranz. Naja, du musst diese Hackbällchen probieren, köstlich!“
+            <br>
+            <br> Wie reagierst du?
+
+          </p>
+
+          <ul class="4">
+            <li id="q4option1">Du starrst Lydia fassungslos an, nimmst dir ein Hackbällchen und sagst verwirrt: "Ja, stimmt."</li>
+            <li id="q4option2">Dir ist es unangenehm jetzt über all das Politische zu sprechen und fragst lieber: "Sag mal, wusstest du, dass
+              Julia schwanger ist?"</li>
+            <li id="q4option3">Du nimmst ihr den Teller aus der Hand und wirst etwas laut: “Lydia? Sag‘ mal, geht’s noch? Bläst du jetzt auch
+              schon in dieses nationalistische Horn?“</li>
+            <li id="q4option4">Du weist sie auf das Themenhopping hin und sagst bestimmt: “Hast du Lust, dich mit mir raus auf die Terrasse
+              setzen? Ich bin ehrlich gesagt überrascht über das, was du sagst, und würde da gerne drüber sprechen.“</li>
+          </ul>
+
+          <div class="answer 4">
+            <p class="q4option1">
+              Stimmst du ihr zu oder möchtest du einfach, dass das Gespräch an dieser Stelle aufhört? Manchmal, wenn wir verwirrt sind,
+              sagen wir Dinge, die wir nicht meinen, wie zum Beispiel: „Ja, stimmt“. Damit ergibt sich kein Gespräch und
+              wahrscheinlich ärgerst du dich ein paar Sekunden später selbst über deine Reaktion. Wenn du dich überfahren
+              von Worten fühlst, sag also lieber: „Da muss ich erstmal drüber nachdenken“. Das ist nicht unfreundlich, drückt
+              aber aus, dass du Zeit benötigst. Oder du reagierst mit einer Verständnisfrage, um etwas Zeit zu gewinnen:
+              “Wie meinst du das?”
+
+            </p>
+            <p class="q4option2">
+              Entweder weiß Lydia die Neuigkeiten von Julia schon lange oder sie wird aufgeregt sein, sie zu erfahren. Wie auch immer,
+              die Botschaft geht leider am Thema vorbei. Du signalisierst damit, dass dir egal ist, worüber Lydia gerade
+              gesprochen hat. Du musst natürlich nicht gleich am Buffet alle Themen aufarbeiten. Aber es wäre gut zu zeigen,
+              dass sie dir nicht gleichgültig sind. Du könntest Lydia auch fragen, ob sie nächste Woche Lust auf einen Kaffee
+              hat, oder ihr vorschlagen, “nachher mal in Ruhe drüber zu reden”.
+            </p>
+            <p class="q4option3">
+              Sie wird sich vor den Kopf gestoßen oder sogar angegriffen fühlen. Das ist keine gute Ausgangslage für ein Gespräch. Wenn
+              es dir auf der Seele brennt, dann weise sie lieber freundlich darauf hin, dass du ihren Redeschwall hinterfragst:
+              „Dich scheinen ja gerade viele verschiedene politische Themen ziemlich zu beschäftigen. Was meinst Du damit
+              konkret?“. Viele Themen über einen Haufen zu werfen, ist ein typisches rechtspopulistisches Gesprächsmuster
+              - aber Lydia hat das vielleicht nicht absichtlich gemacht. Angriff ist daher nicht die beste Verteidigung.
+              Vielleicht reagiert Lydia ja aber auch besonders gut auf Humor. Dann könntest Du etwas sagen wie: „He, was
+              ist los mit dir? Stell dir mal vor, ich würde über dein Kleid, dann über die Wirtschaftskrise und dann über
+              die Verschmutzung der Weltmeere in einem Atemzug sprechen.“ Wenn sie darüber lacht, hast du einen Zugang zu
+              einem Gespräch über Themenhopping.
+
+            </p>
+            <p class="q4option4">
+              Ob die Situation Zeit und Raum für ein ruhiges Gespräch unter vier Augen gleich im Anschluss hergibt, das musst du entscheiden.
+              Mache es ihr im Gespräch deutlich, dass du es problematisch findest, Vorwürfe, wie „Eurolüge“, „Bevormundung“
+              und „Islamisierung“ rauszuschmettern. Wenn ihr beide die Ruhe habt, frag sie doch mal, wo sie diese Worte her
+              hat und was sie ihrer Meinung nach bedeuten. Dabei hilft es, konkret auf eigene Erfahrungen einzugehen: Kennt
+              Sie selbst Menschen muslimischen Glaubens? Was würden sie wohl zu Ihren Aussagen sagen? Und verbindet sie nicht
+              auch viele positive Erfahrungen mit Europa? So kannst du herausfinden, wie tief Lydia schon in rechtspopulistischem
+              Gedankengut drin steckt, und dein weiteres Vorgehen daran orientieren. Wenn die Ruhe nicht da ist, könntest
+              du folgendes vorschlagen: “Hey, mich treiben diese Themen wie Europa und Werte auch sehr um. Cool, dass uns
+              das beiden so geht. Wollen wir morgen telefonieren? Ich fände es wichtig, dass wir uns dazu austauschen.“
+            </p>
+
+            <p class="reset">
+              <a href="javascript:;" class="4 reset">Anders reagieren?</a> /
+              <a href="https://www.kleinerfuenf.de/de/leitfaeden" target="_blank">Zu den Leitfäden</a>
+            </p>
+          </div>
+        </div>
+        <div class="hidden-xs col-sm-4 col-md-3 col-lg-2">
+          <img src="assets/lydiaa.jpg" class="right-12" />
+        </div>
+      </div>
+    </div>
+    <div class="lena question row">
+      <h3>Lena, deine Kommilitonin</h3>
+      <div class="row">
+        <div class="hidden-xs col-sm-4 col-md-3 col-lg-2">
+          <img src="assets/lena.jpg" class="left-10" />
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+          <p>
+            Mittwochs nach der Vorlesung gehst du wieder mit deiner neuen Kommilitonin Lena in die Mensa. Die anderen gehen da immer
+            direkt in die Übung, ihr beiden habt euch aber angewöhnt, erst in die spätere Übung zu gehen - die ist zwar ziemlich
+            spät abends, aber dafür nicht so überfüllt. Nachdem ihr euch in der Ecke der fast leeren Mensa breit gemacht
+            habt, sagt Lena: “Man sollte bei Übungen auch so ‘ne Obergrenze einführen. Ist doch klar: wenn das Haus voll
+            ist, dann passt halt niemand mehr rein - das hat dann auch nichts mehr mit Nettigkeit oder Nächstenliebe zu tun.
+            Wenn selbst die Merkel das jetzt begriffen hat, werden wir das unseren Profs doch auch erklären können, oder?”
+          </p>
+
+          <ul class="5">
+            <li id="q5option1">Dir ist das unangenehm, so hattest du Lena nicht eingeschätzt. Du wirst einsilbig und entschließt dich, in Zukunft
+              doch mit den anderen in die volle Übungsgruppe zu gehen.
+
+            </li>
+            <li id="q5option2">Du bleibst stehen, schnappst Luft und sagst bestimmt: "Dein Ernst? OBERGRENZE? Dieses Seehofer-Gelaber kannste
+              schön Zuhause lassen. Ich hock lieber in 'nem überfüllten Raum mit Normalos als allein mit einer Rassistin
+              zu sein!"</li>
+            <li id="q5option3">Du lässt dir Lenas Worte nochmal durch den Kopf gehen und fragst dann: "Findest du, dass man die Not von Schutzsuchenden
+              und unser Raumangebot an der Uni vergleichen kann? Mich irritiert auch, dass du die sogenannte Obergrenze für
+              richtig erachtest. Warum denn?"
+            </li>
+            <li id="q5option4">Du findest Lenas Vergleich nicht okay, aber bist auch überfordert - und genau das teilst du Lena mit. Und du
+              fügst hinzu: “Lass uns da ein anderes Mal bei einem Kaffee drüber sprechen. Vielleicht vor der nächsten Übung
+              wieder hier?”
+            </li>
+          </ul>
+
+          <div class="answer 5">
+            <p class="q5option1">
+              Es ist verständlich, dass du Lena in Zukunft lieber aus dem Weg gehen willst. Immerhin ist es leichter, mit Menschen befreundet
+              zu sein, mit denen man politische Einstellungen teilt. Trotzdem: Hier hast du eine Chance ausgelassen, ein
+              sachliches Gespräch zu führen. Immerhin weißt du von Lena, dass sie sonst offen für gute Argumente ist. Und
+              du hast dir sicher schon öfter gesagt, dass du nicht mehr einfach nur schweigen möchtest, wenn du in so eine
+              unangenehme Situation kommst. Daher ist es nicht immer der beste Weg, sich in die eigene (Wohlfühl-)Blase zurückzuziehen.
+              Trau dir beim nächsten Mal ruhig zu, genauer nachzufragen und das Thema nicht einfach zu ignorieren.
+
+            </p>
+            <p class="q5option2">
+              Vermutlich warst du schon öfters in solchen unangenehmen Situationen und bist empfindlich geworden. Trotzdem: mit der Reaktion
+              kommst du nicht weit. Selbst wenn du Lena danach noch erklären würdest, warum du ihren Vergleich für problematisch
+              hältst, wird sie schon längst zugemacht haben. Du verpasst damit die Möglichkeit, Lena eine andere, offenere
+              Perspektive auf das Thema Asyl und Geflüchtete näherzubringen und ihr gute Gründe zu nennen, warum du ihrer
+              Aussage nicht zustimmst. Möglicherweise bestärkst du sie durch deine harte Reaktion sogar eher in ihrer Meinung
+              und trägst damit dazu bei, dass sie für zukünftige Gesprächsversuche von anderen unzugänglicher wird.
+            </p>
+            <p class="q5option3">
+              Du kennst dich aus mit dem Thema und fühlst dich bereit für eine inhaltliche Diskussion - super! Und du bist direkt ruhig
+              geblieben und hast erstmal nachgefragt, wie genau sie das meint - wunderbar! Sollte Lena darauf eingehen, kannst
+              Du anschließend begründen, was Du daran problematisch findest: Dass durch bestimmte Sprachbilder wie “Obergrenze”
+              eine Situation konstruiert wird, die nicht der Realität entspricht. Und dass das Recht auf Asyl ein anerkanntes
+              Menschenrecht ist, das nicht einzelnen Menschen zusteht und anderen nicht, sondern für alle Menschen gilt.
+              Danach gibst du Lena nochmal Zeit, ihren Standpunkt auszuführen. So kann ein ehrlicher Austausch unterschiedlicher
+              Meinungen gelingen. Dabei muss niemand danach überzeugt sein, aber zumindest kann so angestoßen werden, die
+              eigenen Ansichten nochmal zu prüfen.
+
+            </p>
+            <p class="q5option4">
+              Du hast Lena direkt gezeigt, dass du mit ihrer Aussage nichts anfangen kannst. Am besten sogar mit einer Ich-Botschaft und
+              nicht mit einem abfälligen Kommentar. Trotzdem bist du in dem Moment etwas überfordert - und das ist auch in
+              Ordnung. Du musst nicht direkt eine Diskussion anstoßen, wenn du dich dazu gerade nicht in der Lage fühlst.
+              Trotzdem ist es natürlich wichtig, das Thema nicht einfach zu ignorieren. Deshalb war es auch sehr gut, dass
+              du direkt einen anderen Zeitpunkt genannt hast, an dem ihr wieder darüber sprechen könnt. So hast du Zeit,
+              dich zu sammeln und vorzubereiten, was du sagen willst. Achte beim nächsten Mal allerdings darauf, dass ihr
+              auch dann wieder zu zweit seid, sonst ist es oft schwierig, eine ruhige und sachliche Unterhaltung zu führen.
+
+            </p>
+
+            <p class="reset">
+              <a href="javascript:;" class="5 reset">Anders reagieren?</a> /
+              <a href="https://www.kleinerfuenf.de/de/leitfaeden" target="_blank">Zu den Leitfäden</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mann question row">
+      <h3>Der Mann im Bus</h3>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+          <p>
+            Du bist mit dem Bus auf dem Heimweg von der Arbeit. Ein rüstiger alter Mann steigt ein, blickt sich um und schimpft vor sich
+            hin: “Erst kommen sie her und nehmen meine Rente weg, jetzt auch noch meinen Sitzplatz”. Der Mann spricht in
+            keine bestimmte Richtung - aber doch ist allen klar, an wen sich das richtet: Ein junger Mann mit schwarzer Haut
+            sitzt auf der anderen Seite des Ganges und versucht, das Ganze zu ignorieren.
+
+          </p>
+
+          <ul class="6">
+            <li id="q6option1">Du sagst schlichtweg: “Halt’s Maul, Opa”.
+            </li>
+            <li id="q6option2">Seine Bemerkung findest du daneben. Aber es war ein langer, anstrengender Tag für dich und außerdem vibriert
+              gerade dein Handy. So vergehen ein paar Augenblicke und du denkst dir: Jetzt ist es auch zu spät noch etwas
+              zu sagen.
+            </li>
+            <li id="q6option3">Du schaust den Herrn an und sagst deutlich: “Entschuldigen Sie, aber Ihre Beleidigungen behalten Sie in Zukunft
+              besser für sich.” Dann wendest du dich an den Betroffenen, vielleicht möchte er selbst etwas sagen oder sich
+              unterhalten.
+            </li>
+            <li id="q6option4">Du bietest dem Zugestiegenen deinen Platz an und sagst: “Mein Herr, setzen Sie sich. Bei mir ist’s nämlich andersrum:
+              Ich zahle Ihre Rente und Sie nehmen meinen Platz weg. Trotzdem beleidige ich Menschen nicht rassistisch.” Wenn
+              noch Raum dafür ist, kannst du nachlegen: “Übrigens nimmt niemand Ihre Rente weg, und selbst wenn: Dann setzen
+              Sie sich doch dafür ein, dass die Steuern für Reiche erhöht werden, statt Menschen zu beleidigen, die damit
+              nichts zu tun haben.”
+            </li>
+          </ul>
+
+          <div class="answer 6">
+            <p class="q6option1">
+              Auch wenn du bestimmt schon viel zu viele gegrummelte fremdenfeindliche Bemerkungen gehört hast und dich das einfach nur
+              noch wütend macht, solltest du solche abfälligen Kommentare vermeiden. Frage dich im Vorfeld, was du mit deiner
+              Reaktion überhaupt bewirken möchtest: Denn nach deiner Reaktion wird der ältere Mann seine Meinung nicht ändern,
+              sondern sie erst recht kund tun wollen. Und vor allem: Du hast nicht einmal deutlich gemacht, warum die Aussage
+              des Mannes nicht okay ist. Mit deiner Bemerkung kannst du dir vielleicht selbst kurz Luft verschaffen, trägst
+              aber nur zur Verschärfung eines aggressiven Klimas bei.
+
+            </p>
+            <p class="q6option2">
+              Wenn du schweigend daneben sitzt, sieht es schnell so aus, als würdest du den Pöbeleien zustimmen. Wenn du falsch findest,
+              was der Mann sagt, das Ganze aber unkommentiert im Raum stehen bleibt, wirst du dich nach Verlassen der Busses
+              bestimmt darüber ärgern, dass du nicht für deine Überzeugungen eingestanden bist. Außerdem überlässt du damit
+              fremdenfeindlichen Parolen das Feld - der ältere Herr hat das letzte Wort gehabt und möglicherweise sogar ein
+              paar stille Sympathisant*innen gewonnen. Denke auch an die Person, die von dem Mann angegriffen wurde: Wenn
+              du schweigst, hast du nicht nur verpasst, für deine Meinung einzustehen, sondern auch den Betroffenen allein
+              gelassen.
+            </p>
+            <p class="q6option3">
+              Gut, dass du deutlich gemacht hast, dass die rassistische Provokation des zugestiegenen Mannes überhaupt nicht in Ordnung
+              ist. Gleichzeitig ist dir ziemlich klar, dass es sich hier nicht lohnt, eine Diskussion anzufangen - und das
+              ist auch in Ordnung! Spare dir deine Energie deshalb besser für anderes auf, zum Beispiel für ein Gespräch
+              mit dem Mann, der dir gegenüber sitzt - falls er da Lust drauf hat. Vielleicht möchte er auch selbst etwas
+              zu dem zugestiegenen Herrn sagen.
+
+            </p>
+            <p class="q6option4">
+              Der Herr scheint seiner Aussage nach schon sehr in rassistischen Meinungsbildern gefangen - deshalb würde eine inhaltliche
+              Diskussion vermutlich nicht auf fruchtbaren Boden fallen. Stattdessen geht es in solchen Situationen darum,
+              Ruhe zu bewahren, klar Position zu beziehen und potenziell Betroffene zu verteidigen. All das hast du mit dieser
+              Reaktion getan: Wenn du in so einer Situation mit Humor und zugleich dem gebührenden Nachdruck reagieren kannst,
+              ist das optimal. Durch die vorsätzliche Geste, in der du ihm dem Sitzplatz anbietest, schaffst du zudem ein
+              Gegenbeispiel zu den Pöbeleien des Mannes. Mit deiner Reaktion kannst du eine Inspiration für andere sein,
+              die vielleicht Angst vor Gegenreaktionen haben oder davor, verkrampft zu wirken.
+            </p>
+
+            <p class="reset">
+              <a href="javascript:;" class="6 reset">Anders reagieren?</a> /
+              <a href="https://www.kleinerfuenf.de/de/leitfaeden" target="_blank">Zu den Leitfäden</a>
+            </p>
+          </div>
+        </div>
+        <div class="hidden-xs col-sm-4 col-md-3 col-lg-2">
+          <img src="assets/mann.jpg" class="right-12" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row footer-k5">
+      <div class="col-xs-6 col-sm-2 col-lg-1">
+        <p>
+          <a href="https://www.kleinerfuenf.de/de/impressum" target="_blank">Impressum</a>
+        </p>
+      </div>
+      <div class="col-xs-6 col-sm-2 col-lg-1">
+        <p>
+          <a href="https://www.kleinerfuenf.de/de/datenschutz" target="_blank">Datenschutz</a>
+        </p>
+      </div>
+      <div class="hidden-xs col-sm-8 col-lg-10">
+        <p class="pull-right">Die Zeichnungen stammen von
+          <a href="http://www.leowald.de" target="_blank">Leo Leowald.</a>
+        </p>
+      </div>
+    </div>
+    <div class="row footer-k5 visible-xs">
+      <div class="col-xs-12 col-sm-10">
+        <p>Die Zeichnungen stammen von
+          <a href="http://www.leowald.de" target="_blank">Leo Leowald.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.twttr = (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function (f) {
+        t._e.push(f);
+      };
+
+      return t;
+    }(document, "script", "twitter-wjs"));
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+  <script src="quiz.js"></script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-91433839-3', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+
 </html>
